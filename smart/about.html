@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>S-Mart | World of Electronics</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="style_category.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="images/logo.png">
+</head>
+
+<body>
+  <header>
+    <div class="top-header" style="position: absolute;">
+      <!-- logo search bar login cart -->
+      <div class="acc-details" style="background-color: #2874f0; width: 100%; ">
+        <div class="aq">
+          <ul>
+            <li><img src="images/logo.png" height=100 width= 200></li>
+          </ul>
+          <ul>
+            <li>
+              <input type=text placeholder="Search..">
+              <button type=submit><i class="fa fa-search"></i></button>
+            </li>
+          </ul>
+          <ul>
+            <li><button onclick=open_tab("register")>Create Account</button></li>
+            <li><button onclick=open_tab("login")>Login</button></li>
+            <li><button onclick=open_tab("feedback")>Feedback</button></li>
+          </ul>
+          <ul>
+            <li><button onclick=open_cart()>cart</button></li>
+          </ul>   
+              <br>          
+          <ol>              
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="laptops.html">Laptops</a></li>
+            <li><a href="phones.html">Phones</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <about>
+    <div style="position:absolute;  top: 128px; width:97%;padding:20px; text-align:left; height:auto; padding-bottom: 50px; display: flex; justify-content: center; ">
+      <div style=" width: 80%; padding: 0% 2% 2% 2%; text-align: justify;">
+        <h1>About</h1>
+        <h2>S-Mart: The One-stop Shopping Destination</h2>
+            <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. S-Mart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories. For those of you with erratic working hours, S-Mart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.
+
+            What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from S-Mart when there are multiple options available to you, well, the below will answer your question.</p>
+
+          <h3>No Cost EMI</h3>
+            <p>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances electronics, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p>
+
+          <h3>EMI on Debit Cards</h3>
+            <p>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, S-Mart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</p>
+
+          <h3>Mobile Exchange Offers</h3>
+            <p>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the S-Mart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply.</p>
+
+          <h2>What Can You Buy From S-Mart?</h2>
+          <h3>Mobile Phones</h3>
+            <p>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with S-Mart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - the S-Mart Complete Mobile Protection covers a comprehensive range of post-purchase problems, with door-to-door services.</p>
+
+           <h3> Devices and Accessories</h3>
+            <p>When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our Back To College Store segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.</p>
+
+          <h2>Developer Profile</h2>
+          <table width=100% border=0 align=center>
+            <tr>
+              <td width=50% >
+                <div style="padding-left: 35%;">
+                    
+                  <img src="images/profile_1.jpg" height=100 width=100 style="border-radius: 50%;">
+                </div>
+                <div style="padding-left: 30%;">
+                  <p><strong>Ch Sai Dixith </strong><br>
+                      Senior Data Analyst <br>
+                      10 years of experience in Statistical data Analysis<br><br>
+                      <strong>Contact: </strong>
+                      <div style="padding-left: 10px;">
+                        +91 91331 20299<br>
+                        saidixith002@gmail.com<br>
+                        saidixith002@hotmail.com<br>
+                        Chennoor, Mancherial-504201<br>
+                        Telangana, India
+                      </div>
+                  </p>
+                </div>
+              </td>
+              <td width=50%>               
+                <div style="padding-left: 35%;">                    
+                  <img src="images/profile_2.jpeg" height=100 width=100 style="border-radius: 50%;">
+                </div>
+                <div style="padding-left: 30%;">
+                  <p><strong>E Manideep Reddy </strong><br>
+                      Senior Marketing Admin <br>
+                      8 years of experience in Marketing Management<br><br>
+                      <strong>Contact: </strong>
+                      <div style="padding-left: 10px;">
+                        +91 93810 23567<br>
+                        manideepreddy6465@gmail.com<br>
+                        manideepreddy6465@hotmail.com<br>
+                        Huzurabad, Karimanagar-505468<br>
+                        Telangana, India
+                      </div>
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </table>
+      </div>      
+    </div>
+  </about>
+
+  <footer>
+    <div class="footer-outer" style="position:absolute;  top: 1500px; width:100%; text-align:center; height: auto; background-color: #2874f0;">
+      <div style="width:80%; height:50%; ">
+      <table border=0 width=100% >
+        <tr>
+          <td width=33% align=left style="padding-left: 40px; color:">
+            <h2>S Mart</h2>
+            <h4 style="margin-block-start:0em;">World of Electronics</h4>
+            <h3  style="margin-block-end:0em;">Office:</h3>
+            <h4 style="margin-block-start:0em;">Chennoor Mancherial-504 201<br>Telangana, India</h4>
+            <h3  style="margin-block-end:0em;">Office Hours:</h3>
+            <h4 style="margin-block-start:0em;">8:00am - 5:00pm</h4>
+            <h3  style="margin-block-end:0em;">Phone:</h3>
+            <h4 style="margin-block-start:0em;">+91 9133120299</h4>   
+            <h3  style="margin-block-end:0em;">Email:</h3>
+            <h4 style="margin-block-start:0em;">saidixith002@gmail.com<br>saidixith002@hotmail.com</h4>
+          </td>
+          <td width=33% align=left style="padding-left: 40px; vertical-align: top;">
+            <h2> Quick Links:</h2>
+            <div class="footer-links">
+              <a href="index.html">Home</a><br><br>
+              <a href="about.html">About us</a><br><br>
+              <a href="laptops.html">Laptops</a><br><br>
+              <a href="phones.html">Phones</a><br><br>
+              <a href="accessories.html">Accessories</a><br><br>
+              <a href="contact.html">Contact us</a>
+            </div>
+          </td>
+          <td width=33% align=left style="padding-left: 40px; vertical-align: top; padding-block-start: 4em;">
+            <div class="footer-button">
+            <button onclick=open_tab("register")>Create Account</button><br><br>
+            <button onclick=open_tab("login")>Login</button><br><br>
+            <button onclick=open_tab("feedback")>Feedback</button>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p>Copyrights &#9400; 2020 S-Mart World of Electonics. All rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <login-forms>
+    <div class="register-outer" id="register">
+      <div class="register-inner">
+        <div class="register-inner-inner">
+          <button id="close" onclick=close_tab("register") title="close">X</button>
+          <div class="register-form">
+            <form> 
+              <table width=90% height=100%>
+                <caption style="font-size: 2em;">Registration Form:</caption>
+                <tr>
+                  <td width= 30%>   <label>Name:</label>  </td>
+                  <td width= 70%>   <input type="text" id="name" placeholder="Full name..">   </td>
+                </tr>
+                <tr>
+                  <td>   <label>Gender:</label>  </td>
+                  <td>   <select id="gender">
+                          <option value="select">Select</option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                        </select>  
+                  </td>
+                </tr>
+                <tr>
+                  <td>   <label>Email:</label>  </td>
+                  <td>   <input type="text" id="email">   </td>
+                </tr>
+                <tr>
+                  <td>   <label>Phone Number:</label>  </td>
+                  <td>   <input type="text" id="phonenumber">   </td>
+                </tr>
+                <tr>
+                  <td>   <label>Date of Birth:</label>  </td>
+                  <td>   <input type="date" id="dob">   </td>
+                </tr>
+                <tr>
+                  <td>   <label>Username:</label>  </td>
+                  <td>   <input type="text" id="Username">   </td>
+                </tr>
+                <tr>
+                  <td>   <label>Password:</label>  </td>
+                  <td>   <input type="password" id="password">   </td>
+                </tr>
+                <tr>
+                  <td>   <label>Confirm Password:</label>  </td>
+                  <td>   <input type="password" id="cpassword">   </td>
+                </tr>
+                <tr >
+                  <td colspan=2>  <input type="checkbox" id="agree1"><label> I agree to the terms and conditions</label>  </td>
+                </tr>
+                <tr >
+                  <td colspan=2>  <input type="checkbox" id="agree2"> <label>I want to new and special offers</label>  </td>
+                </tr>
+                <tr>
+                  <td width=50%> <input type=reset value=clear> </td>
+                  <td> <input type="submit" value=submit onclick="return validate_register()"> </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-outer" id="login">
+      <div class="login-inner">
+        <div class="login-inner-inner">
+          <button id="close" onclick=close_tab("login") title="close">X</button>
+          <div class="login-form">
+            <form>
+              <label>User Name:</label><br>
+              <input type=text placeholder="Username.." id="login-username"><br>
+              <label>Password:</label><br>
+              <input type="password" placeholder="password.." id="login-password"><br>
+              <input type="submit" value=login onclick="return validate_login()" >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="feedback-outer" id="feedback">
+      <div class="feedback-inner">
+        <div class="feedback-inner-inner">
+          <button id="close" onclick=close_tab("feedback") title="close">X</button>
+          <div class="feedback-form">
+            <form  style="width:70%; height:100%" > 
+              <table width=100% height=100%>
+                <caption style="font-size: 2em;" >Feedback Form</caption>
+                <tr>
+                  <td colspan=3 style="font-size: 1.2em;"> Please provide tour feedback below:  </td>
+                </tr>
+                <tr>
+                  <td colspan=3 style="font-size: 1.2em;"> How do to rate overall experience ?  </td>
+                </tr>
+                <tr>
+                  <td width=33%> 
+                    <input type="radio" id="bad" name="grade">
+                    <label style="font-size: 1.2em;"> Bad</label>
+                  </td>
+                  <td width=33%>
+                    <input type="radio" id="average" name="grade">
+                    <label style="font-size: 1.2em;"> Average</label>
+                  </td>
+                  <td>
+                    <input type="radio" id="good" name="grade">
+                    <label style="font-size: 1.2em;"> Good</label>
+                </td>
+                </tr>
+                <tr>
+                  <td colspan=3 style="font-size: 1.2em;"> Comments: </td>
+                </tr>
+                <tr height=100>
+                  <td colspan=3> <textarea style="width:100%; height:90%; padding: 2px 5px 2px 5px;border-radius: 5px;"></textarea></td>
+                </tr>
+                <tr>
+                  <td><label>Name:</label></td>
+                  <td colspan=2><input type="text" id="feedback-name"></td>
+                </tr>
+                <tr>
+                  <td><label>Email:</label></td>
+                  <td colspan=2><input type="text" id="feedback-email"></td>
+                </tr>
+                <tr>
+                  <td colspan=3> <input type="submit" value="POST" onclick="return validate_post()"> </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-outer" id="cart">
+      <div class="cart-inner">
+        <div class="cart-inner-inner">
+          <button id="close" onclick=close_tab("cart") title="close">X</button>
+          <div class="cart-list">
+            <table border=0 width=90% cellspacing=0>
+              <caption style="font-size: 1.2em;">Cart item list</caption>
+              <tr align=center>
+                  <td width=60%>Name</td>
+                  <td>Cost</td>
+                  <td>Quantity</td>
+                </tr>
+            </table>
+            <table id="cart-table" border=0 cellspacing=0 width=90%>
+              <thead>
+                <tr align=center>
+                  <td width=60%>Name</td>
+                  <td>Cost</td>
+                  <td>Quantity</td>
+                </tr>
+              </thead>
+              <tbody id="cart-body">
+                <tr align=center>
+                  <td width=60%>Name</td>
+                  <td>Cost</td>
+                  <td>Quantity</td>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </login-forms>
+
+  <script src="script.js"></script>
+</body>
+</html>r

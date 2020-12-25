@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>S-Mart | World of Electronics</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="images/logo.png">
+</head>
+
+<body>
+  <header>
+    <div class="top-header" style="position: absolute;">
+      <!-- logo search bar login cart -->
+      <div class="acc-details" style="background-color: #2874f0; width: 100%; ">
+        <div class="aq">
+          <ul>
+            <li><img src="images/logo.png" height=100 width= 200></li>
+          </ul>
+          <ul>
+            <li>
+              <input type=text placeholder="Search..">
+              <button type=submit><i class="fa fa-search"></i></button>
+            </li>
+          </ul>
+          <ul>
+            <li><button onclick=open_tab("register")>Create Account</button></li>
+            <li><button onclick=open_tab("login")>Login</button></li>
+            <li><button onclick=open_tab("feedback")>Feedback</button></li>
+          </ul>
+          <ul>
+            <li><button onclick=open_cart()>cart</button></li>
+          </ul>   
+              <br>          
+          <ol>              
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="laptops.html">Laptops</a></li>
+            <li><a href="phones.html">Phones</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ol>
+        </div>
+      </div>
+    </div> 
+  </header>
+
+  <slider>
+    <div style="position: absolute; width: 94%; top:128px; padding-left: 2%;">
+    
+      <div class="slider">
+        <div class="allslides">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/slider1.jpg" style="width:100%; height: 500px; vertical-align: bottom;">
+          <div class="text">Deals of the day</div>
+        </div>  
+        <div class="allslides">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/slider2.jpg" style="width:100%; height: 500px; vertical-align: bottom;">
+          <div class="text" style="color:black;">Mobile Store</div>
+        </div>  
+        <div class="allslides">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/slider3.jpg" style="width:100%; height: 500px; vertical-align: bottom;">
+          <div class="text">Grab now</div>
+        </div>  
+        <div class="allslides">
+          <div class="numbertext">4 / 3</div>
+          <img src="images/slider4.jpg" style="width:100%; height: 500px; vertical-align: bottom;">
+          <div class="text">Exclusive offers for you</div>
+        </div> 
+        <a class="previous" onclick=pushslide(-1)>&#10094;</a>
+        <a class="next" onclick=pushslide(+1)>&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+      </div>
+    </div>
+  </slider>
+
+  <catogories>
+    <div style="position:absolute;  top: 700px; width:97%;padding:20px; text-align:center; height:600px; padding-bottom: 50px;">
+      <table height=100% width=100% border=0 align=right cellspacing=0 class="shopnow-table"> 
+        <tr>
+          <td width=33%>
+            <img class="shopnow-img" src="images/shopnow1.jfif" width=400px height=350px>
+            <h2>Laptops</h2>
+            <h4>starting from &#8377;49,999</h4>
+            <p>New collections </p>
+            <p>Upto 50%off+Extra 5%off</p>
+            <input type=button onClick="location.href='laptops.html'" value='shop now' class="shopnow">
+          </td>
+          <td>
+            <img class="shopnow-img" src="images/shopnow2.jpg" width=400px height=350px>
+            <h2>Phones</h2>
+            <h4>starting from &#8377;9,999</h4>
+            <p>New sales starts today</p>
+            <p>Special offer 40%off</p>
+            <input type=button onClick="location.href='phones.html'" value='shop now' class="shopnow">
+          </td>
+          <td>
+            <img class="shopnow-img" src="images/shopnow3.jpg" width=400px height=350px>
+            <h2>Accessories</h2>
+            <h4>for Mobiles & Laptops</h4>
+            <p>Unlimited store for accessories</p>
+            <p>Special offer on each deal</p>
+            <input type=button onClick="location.href='accessories.html'" value='shop now' class="shopnow">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </catogories>
+
+  <footer>
+    <div class="footer-outer" style="position: absolute;  top: 1350px; width:100%; text-align:center; height: auto; background-color: #2874f0;">
+      <div style="width:80%; height:50%; ">
+      <table border=0 width=100% >
+        <tr>
+          <td width=33% align=left style="padding-left: 40px; color:">
+            <h2>S Mart</h2>
+            <h4 style="margin-block-start:0em;">World of Electronics</h4>
+            <h3  style="margin-block-end:0em;">Office:</h3>
+            <h4 style="margin-block-start:0em;">Chennoor Mancherial-504 201<br>Telangana, India</h4>
+            <h3  style="margin-block-end:0em;">Office Hours:</h3>
+            <h4 style="margin-block-start:0em;">8:00am - 5:00pm</h4>
+            <h3  style="margin-block-end:0em;">Phone:</h3>
+            <h4 style="margin-block-start:0em;">+91 9133120299</h4>   
+            <h3  style="margin-block-end:0em;">Email:</h3>
+            <h4 style="margin-block-start:0em;">saidixith002@gmail.com<br>saidixith002@hotmail.com</h4>
+          </td>
+          <td width=33% align=left style="padding-left: 40px; vertical-align: top;">
+            <h2> Quick Links:</h2>
+            <div class="footer-links">
+              <a href="index.html">Home</a><br><br>
+              <a href="about.html">About us</a><br><br>
+              <a href="laptops.html">Laptops</a><br><br>
+              <a href="phones.html">Phones</a><br><br>
+              <a href="accessories.html">Accessories</a><br><br>
+              <a href="contact.html">Contact us</a>
+            </div>
+          </td>
+          <td width=33% align=left style="padding-left: 40px; vertical-align: top; padding-block-start: 4em;">
+            <div class="footer-button">
+            <button onclick=open_tab("register")>Create Account</button><br><br>
+            <button onclick=open_tab("login")>Login</button><br><br>
+            <button onclick=open_tab("feedback")>Feedback</button>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p>Copyrights &#9400; 2020 S-Mart World of Electonics. All rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+   <login-forms>
+    <div class="register-outer" id="register">
+      <div class="register-inner">
+        <div class="register-inner-inner">
+          <button id="close" onclick=close_tab("register") title="close">X</button>
+          <div class="register-form">
+            <form> 
+              <table width=90% height=100%>
+                <caption style="font-size: 2em;">Registration Form:</caption>
+                <tr>
+                  <td width= 30%>   <label>Name:</label>  </td>
+                  <td width= 70%>   <input type="text" id="name" placeholder="Full name..">   </td>
+                </tr>
+                <tr>
+                  <td>   <label>Gender:</label>  </td>
+                  <td>   <select id="gender">
+                          <option value="select">Select</option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                        </select>  
+                  </td>
+                </tr>
+                <tr>
+                  <td>   <label>Email:</label>  </td>
+                  <td>   <input type="text" id="email">   </td>
+                </tr>
+                <tr>
+                  <td>   <label>Phone Number:</label>  </td>
+                  <td>   <input type="text" id="phonenumber">   </td>
+                </tr>
+                <tr>
+                  <td>   <label>Date of Birth:</label>  </td>
+                  <td>   <input type="date" id="dob">   </td>
+                </tr>
+                <tr>
+                  <td>   <label>Username:</label>  </td>
+                  <td>   <input type="text" id="Username">   </td>
+                </tr>
+                <tr>
+                  <td>   <label>Password:</label>  </td>
+                  <td>   <input type="password" id="password">   </td>
+                </tr>
+                <tr>
+                  <td>   <label>Confirm Password:</label>  </td>
+                  <td>   <input type="password" id="cpassword">   </td>
+                </tr>
+                <tr >
+                  <td colspan=2>  <input type="checkbox" id="agree1"><label> I agree to the terms and conditions</label>  </td>
+                </tr>
+                <tr >
+                  <td colspan=2>  <input type="checkbox" id="agree2"> <label>I want to new and special offers</label>  </td>
+                </tr>
+                <tr>
+                  <td width=50%> <input type=reset value=clear> </td>
+                  <td> <input type="submit" value=submit onclick="return validate_register()"> </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-outer" id="login">
+      <div class="login-inner">
+        <div class="login-inner-inner">
+          <button id="close" onclick=close_tab("login") title="close">X</button>
+          <div class="login-form">
+            <form>
+              <label>User Name:</label><br>
+              <input type=text placeholder="Username.." id="login-username"><br>
+              <label>Password:</label><br>
+              <input type="password" placeholder="password.." id="login-password"><br>
+              <input type="submit" value=login onclick="return validate_login()" >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="feedback-outer" id="feedback">
+      <div class="feedback-inner">
+        <div class="feedback-inner-inner">
+          <button id="close" onclick=close_tab("feedback") title="close">X</button>
+          <div class="feedback-form">
+            <form  style="width:70%; height:100%" > 
+              <table width=100% height=100%>
+                <caption style="font-size: 2em;" >Feedback Form</caption>
+                <tr>
+                  <td colspan=3 style="font-size: 1.2em;"> Please provide tour feedback below:  </td>
+                </tr>
+                <tr>
+                  <td colspan=3 style="font-size: 1.2em;"> How do to rate overall experience ?  </td>
+                </tr>
+                <tr>
+                  <td width=33%> 
+                    <input type="radio" id="bad" name="grade">
+                    <label style="font-size: 1.2em;"> Bad</label>
+                  </td>
+                  <td width=33%>
+                    <input type="radio" id="average" name="grade">
+                    <label style="font-size: 1.2em;"> Average</label>
+                  </td>
+                  <td>
+                    <input type="radio" id="good" name="grade">
+                    <label style="font-size: 1.2em;"> Good</label>
+                </td>
+                </tr>
+                <tr>
+                  <td colspan=3 style="font-size: 1.2em;"> Comments: </td>
+                </tr>
+                <tr height=100>
+                  <td colspan=3> <textarea style="width:100%; height:90%; padding: 2px 5px 2px 5px;border-radius: 5px;"></textarea></td>
+                </tr>
+                <tr>
+                  <td><label>Name:</label></td>
+                  <td colspan=2><input type="text" id="feedback-name"></td>
+                </tr>
+                <tr>
+                  <td><label>Email:</label></td>
+                  <td colspan=2><input type="text" id="feedback-email"></td>
+                </tr>
+                <tr>
+                  <td colspan=3> <input type="submit" value="POST" onclick="return validate_post()"> </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-outer" id="cart">
+      <div class="cart-inner">
+        <div class="cart-inner-inner">
+          <button id="close" onclick=close_tab("cart") title="close">X</button>
+          <div class="cart-list">
+            <table border=0 width=90% cellspacing=0>
+              <caption style="font-size: 1.2em;">Cart item list</caption>
+              <tr align=center>
+                  <td width=60%>Name</td>
+                  <td>Cost</td>
+                  <td>Quantity</td>
+                </tr>
+            </table>
+            <table id="cart-table" border=0 cellspacing=0 width=90%>
+              <thead>
+                <tr align=center>
+                  <td width=60%>Name</td>
+                  <td>Cost</td>
+                  <td>Quantity</td>
+                </tr>
+              </thead>
+              <tbody id="cart-body">
+                <tr align=center>
+                  <td width=60%>Name</td>
+                  <td>Cost</td>
+                  <td>Quantity</td>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </login-forms>
+
+    <script src="script.js"></script>
+    <script src="script_index.js"></script>
+</body>
+</html>
